@@ -41,6 +41,25 @@ export default class BookList {
       this.displayBooks();
     }
   }
-  
+
+  addBookHtml() {
+    return this.storeData.map((book, index) => `
+      <div class="book-list-book">
+        <p>" ${book.title}"  by  ${book.author} </p>
+        <button class="remove" data-index="${index}" type="button">Remove</button>
+      </div>
+    `).join('');
+  }
+
+  displayBooks() {
+    const div = document.createElement('div');
+    div.innerHTML = this.addBookHtml();
+    this.container.innerHTML = '';
+    this.container.appendChild(div);
+  }
+
+  updateData() {
+    localStorage.setItem('Added Books', JSON.stringify(this.storeData));
+  }
 }
 

@@ -1,13 +1,12 @@
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 import BookList from './modules/booklist.js';
 import {
-  navList, navAdd, navContact
+  navList, navAdd, navContact,
 } from './modules/variables.js';
 import { goToListSection, goToAddSection, goToContactSection } from './modules/nav.js';
 
 navList.addEventListener('click', () => {
   goToListSection();
-  render();
 });
 
 navAdd.addEventListener('click', () => {

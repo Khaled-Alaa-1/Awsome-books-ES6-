@@ -6,5 +6,5 @@ const addANewSection = document.querySelector('.addingBook');
 const contactSection = document.querySelector('.contact');
 
 export {
- navList, navAdd, navContact,listSection, addANewSection, contactSection,
+  navList, navAdd, navContact, listSection, addANewSection, contactSection,
 };

@@ -62,4 +62,3 @@ export default class BookList {
     localStorage.setItem('Added Books', JSON.stringify(this.storeData));
   }
 }
-

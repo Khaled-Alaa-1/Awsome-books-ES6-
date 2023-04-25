@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Comic Neue', cursive;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+}
+
+.navbarItems {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.book-menu {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+#currentTime {
+  text-align-last: right;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.newBook-title {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.book-list {
+  padding: 0;
+  border: 3px solid black;
+  width: 100%;
+}
+
+.book-list-book {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200, 200, 200);
+}
+
+.book-list-book:nth-child(even) {
+  background-color: white;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid black;
+  margin: 10px 0;
+  width: 20%;
+}
+
+input {
+  width: 100%;
+  border: 3px solid black;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  box-shadow: 10px 5px 5px black;
+  background-color: white;
+  align-self: flex-end;
+}
+
+form {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  border: 3px solid black;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.hide {
+  display: none;
+}
